@@ -33,7 +33,7 @@ spec:
         app: drupals
     spec:
       initContainers:
-      - name: init-sites-volumes
+      - name: init-sites-volume
         image: drupal:8.6
         command: [ "/bin/bash", "-c" ]
         args: [ 'cp -r /var/www/html/sites/ /data/; chown www-data:www-data /data/ -R' ]
