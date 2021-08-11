@@ -25,12 +25,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: drupals
+      app: drupal
   template:
     metadata:
       name: drupal
       labels:
-        app: drupals
+        app: drupal
     spec:
       initContainers:
       - name: init-sites-volume
